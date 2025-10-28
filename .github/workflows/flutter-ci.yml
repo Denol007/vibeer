@@ -28,22 +28,23 @@ jobs:
         channel: 'stable'
         cache: true
     
+    - name: Initialize Flutter
+      run: |
+        flutter --version
+        flutter config --no-analytics
+    
     - name: Get dependencies
-      working-directory: vibe_app
-      run: flutter pub get
+      run: cd vibe_app && flutter pub get
     
     - name: Verify formatting
-      working-directory: vibe_app
-      run: dart format --output=none --set-exit-if-changed .
+      run: cd vibe_app && dart format --output=none --set-exit-if-changed .
       continue-on-error: true
     
     - name: Analyze project source
-      working-directory: vibe_app
-      run: flutter analyze
+      run: cd vibe_app && flutter analyze
     
     - name: Run tests
-      working-directory: vibe_app
-      run: flutter test --coverage
+      run: cd vibe_app && flutter test --coverage
       continue-on-error: true
     
     - name: Upload coverage to Codecov
@@ -75,13 +76,16 @@ jobs:
         channel: 'stable'
         cache: true
     
+    - name: Initialize Flutter
+      run: |
+        flutter --version
+        flutter config --no-analytics
+    
     - name: Get dependencies
-      working-directory: vibe_app
-      run: flutter pub get
+      run: cd vibe_app && flutter pub get
     
     - name: Build APK
-      working-directory: vibe_app
-      run: flutter build apk --release
+      run: cd vibe_app && flutter build apk --release
     
     - name: Upload APK artifact
       uses: actions/upload-artifact@v4
