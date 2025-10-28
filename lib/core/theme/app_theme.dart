@@ -45,11 +45,11 @@ class AppTheme {
       ),
 
       // Card theme
-      cardTheme: CardThemeData(
+      cardTheme: const CardThemeData(
         elevation: 2,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
         color: AppColors.surface,
-        margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+        margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       ),
 
       // Button themes
@@ -129,8 +129,8 @@ class AppTheme {
       ),
 
       // Dialog theme
-      dialogTheme: DialogThemeData(
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+      dialogTheme: const DialogThemeData(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(16))),
         backgroundColor: AppColors.surface,
       ),
 
@@ -282,11 +282,11 @@ class AppTheme {
       ),
 
       // Card theme
-      cardTheme: CardThemeData(
+      cardTheme: const CardThemeData(
         elevation: 4,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
         color: AppColors.darkSurface,
-        margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+        margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       ),
 
       // Button themes
@@ -366,8 +366,8 @@ class AppTheme {
       ),
 
       // Dialog theme
-      dialogTheme: DialogThemeData(
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+      dialogTheme: const DialogThemeData(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(16))),
         backgroundColor: AppColors.darkSurface,
       ),
 
