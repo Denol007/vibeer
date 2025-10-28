@@ -3,7 +3,6 @@ import 'package:vibe_app/features/chat/models/message_model.dart';
 import 'package:vibe_app/features/chat/models/private_conversation_model.dart';
 import 'package:vibe_app/features/chat/services/chat_service.dart';
 import 'package:vibe_app/features/auth/services/auth_service.dart';
-import 'package:vibe_app/features/profile/services/profile_service.dart';
 
 /// Firebase implementation of ChatService
 ///

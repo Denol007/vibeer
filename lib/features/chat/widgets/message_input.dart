@@ -48,7 +48,7 @@ class _MessageInputState extends State<MessageInput> {
         color: AppColors.background,
         border: Border(
           top: BorderSide(
-            color: AppColors.textSecondary.withValues(alpha: 0.2),
+            color: AppColors.textSecondary.withOpacity(0.2),
             width: 1,
           ),
         ),
@@ -76,7 +76,7 @@ class _MessageInputState extends State<MessageInput> {
                   decoration: InputDecoration(
                     hintText: 'Написать сообщение...',
                     hintStyle: TextStyle(
-                      color: AppColors.textSecondary.withValues(alpha: 0.6),
+                      color: AppColors.textSecondary.withOpacity(0.6),
                     ),
                     border: InputBorder.none,
                     contentPadding: const EdgeInsets.symmetric(
@@ -100,7 +100,7 @@ class _MessageInputState extends State<MessageInput> {
             Container(
               decoration: BoxDecoration(
                 color: _controller.text.trim().isEmpty || widget.isLoading
-                    ? AppColors.textSecondary.withValues(alpha: 0.3)
+                    ? AppColors.textSecondary.withOpacity(0.3)
                     : AppColors.primary,
                 shape: BoxShape.circle,
               ),

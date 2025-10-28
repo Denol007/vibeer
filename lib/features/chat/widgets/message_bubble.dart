@@ -241,7 +241,7 @@ class MessageBubble extends StatelessWidget {
                               style: TextStyle(
                                 fontSize: 11,
                                 color: isOwnMessage
-                                    ? Colors.white.withValues(alpha: 0.7)
+                                    ? Colors.white.withOpacity(0.7)
                                     : AppColors.textSecondary,
                               ),
                             ),

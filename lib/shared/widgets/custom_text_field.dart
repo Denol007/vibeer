@@ -79,18 +79,18 @@ class CustomTextField extends StatelessWidget {
         filled: true,
         fillColor: enabled
             ? AppColors.surface
-            : AppColors.surface.withValues(alpha: 0.5),
+            : AppColors.surface.withOpacity(0.5),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: BorderSide(
-            color: AppColors.textSecondary.withValues(alpha: 0.3),
+            color: AppColors.textSecondary.withOpacity(0.3),
             width: 1,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: BorderSide(
-            color: AppColors.textSecondary.withValues(alpha: 0.3),
+            color: AppColors.textSecondary.withOpacity(0.3),
             width: 1,
           ),
         ),
@@ -109,7 +109,7 @@ class CustomTextField extends StatelessWidget {
         disabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: BorderSide(
-            color: AppColors.textSecondary.withValues(alpha: 0.2),
+            color: AppColors.textSecondary.withOpacity(0.2),
             width: 1,
           ),
         ),
@@ -120,13 +120,13 @@ class CustomTextField extends StatelessWidget {
         labelStyle: TextStyle(
           color: enabled
               ? AppColors.textSecondary
-              : AppColors.textSecondary.withValues(alpha: 0.5),
+              : AppColors.textSecondary.withOpacity(0.5),
         ),
         hintStyle: TextStyle(
-          color: AppColors.textSecondary.withValues(alpha: 0.6),
+          color: AppColors.textSecondary.withOpacity(0.6),
         ),
         helperStyle: TextStyle(
-          color: AppColors.textSecondary.withValues(alpha: 0.8),
+          color: AppColors.textSecondary.withOpacity(0.8),
           fontSize: 12,
         ),
         errorStyle: const TextStyle(color: AppColors.error, fontSize: 12),

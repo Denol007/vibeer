@@ -62,7 +62,7 @@ class SetupRequiredScreen extends StatelessWidget {
                 color: AppColors.surface,
                 borderRadius: BorderRadius.circular(12),
                 border: Border.all(
-                  color: AppColors.primary.withValues(alpha: 0.3),
+                  color: AppColors.primary.withOpacity(0.3),
                 ),
               ),
               child: Column(
@@ -176,7 +176,7 @@ class SetupRequiredScreen extends StatelessWidget {
           Container(
             padding: const EdgeInsets.all(12),
             decoration: BoxDecoration(
-              color: AppColors.primary.withValues(alpha: 0.1),
+              color: AppColors.primary.withOpacity(0.1),
               borderRadius: BorderRadius.circular(8),
             ),
             child: Icon(icon, color: AppColors.primary, size: 24),

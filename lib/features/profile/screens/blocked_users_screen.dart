@@ -71,7 +71,7 @@ class BlockedUsersScreen extends ConsumerWidget {
           Icon(
             Icons.block_outlined,
             size: 64,
-            color: AppColors.textSecondary.withValues(alpha: 0.5),
+            color: AppColors.textSecondary.withOpacity(0.5),
           ),
           const SizedBox(height: 16),
           const Text(
@@ -90,7 +90,7 @@ class BlockedUsersScreen extends ConsumerWidget {
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 14,
-                color: AppColors.textSecondary.withValues(alpha: 0.7),
+                color: AppColors.textSecondary.withOpacity(0.7),
               ),
             ),
           ),
@@ -134,7 +134,7 @@ class BlockedUsersScreen extends ConsumerWidget {
         'Заблокирован',
         style: TextStyle(
           fontSize: 14,
-          color: AppColors.textSecondary.withValues(alpha: 0.7),
+          color: AppColors.textSecondary.withOpacity(0.7),
         ),
       ),
       trailing: OutlinedButton(

@@ -360,7 +360,7 @@ class ProfileScreen extends ConsumerWidget {
                     child: Container(
                       padding: const EdgeInsets.all(16),
                       decoration: BoxDecoration(
-                        color: AppColors.surface.withValues(alpha: 0.5),
+                        color: AppColors.surface.withOpacity(0.5),
                         borderRadius: BorderRadius.circular(12),
                       ),
                       child: Column(
@@ -478,10 +478,10 @@ class ProfileScreen extends ConsumerWidget {
       child: Container(
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
-          color: AppColors.surface.withValues(alpha: 0.5),
+          color: AppColors.surface.withOpacity(0.5),
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: AppColors.primary.withValues(alpha: 0.2),
+            color: AppColors.primary.withOpacity(0.2),
           ),
         ),
         child: Column(
@@ -560,7 +560,7 @@ class ProfileScreen extends ConsumerWidget {
                         IconButton(
                           onPressed: () => context.push('/friend-requests'),
                           style: IconButton.styleFrom(
-                            backgroundColor: AppColors.primary.withValues(alpha: 0.1),
+                            backgroundColor: AppColors.primary.withOpacity(0.1),
                             foregroundColor: AppColors.primary,
                             padding: const EdgeInsets.all(12),
                           ),
@@ -598,7 +598,7 @@ class ProfileScreen extends ConsumerWidget {
                   loading: () => IconButton(
                     onPressed: () => context.push('/friend-requests'),
                     style: IconButton.styleFrom(
-                      backgroundColor: AppColors.primary.withValues(alpha: 0.1),
+                      backgroundColor: AppColors.primary.withOpacity(0.1),
                       foregroundColor: AppColors.primary,
                     ),
                     icon: const Icon(Icons.person_add),
@@ -606,7 +606,7 @@ class ProfileScreen extends ConsumerWidget {
                   error: (_, __) => IconButton(
                     onPressed: () => context.push('/friend-requests'),
                     style: IconButton.styleFrom(
-                      backgroundColor: AppColors.primary.withValues(alpha: 0.1),
+                      backgroundColor: AppColors.primary.withOpacity(0.1),
                       foregroundColor: AppColors.primary,
                     ),
                     icon: const Icon(Icons.person_add),

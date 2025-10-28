@@ -157,7 +157,7 @@ class _GlobalSearchScreenState extends ConsumerState<GlobalSearchScreen> {
           children: [
             // Info card
             Card(
-              color: AppColors.primary.withValues(alpha: 0.1),
+              color: AppColors.primary.withOpacity(0.1),
               child: Padding(
                 padding: const EdgeInsets.all(16),
                 child: Column(
@@ -249,7 +249,7 @@ class _GlobalSearchScreenState extends ConsumerState<GlobalSearchScreen> {
             if (_errorMessage != null) ...[
               const SizedBox(height: 16),
               Card(
-                color: AppColors.error.withValues(alpha: 0.1),
+                color: AppColors.error.withOpacity(0.1),
                 child: Padding(
                   padding: const EdgeInsets.all(16),
                   child: Row(

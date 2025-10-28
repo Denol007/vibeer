@@ -127,7 +127,7 @@ enum EventCategory {
 
   /// Get light background color for category
   Color get lightColor {
-    return color.withValues(alpha: 0.1);
+    return color.withOpacity(0.1);
   }
 
   /// Parse from string value (for Firestore deserialization)

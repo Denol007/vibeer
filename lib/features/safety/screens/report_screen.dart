@@ -182,7 +182,7 @@ class _ReportScreenState extends ConsumerState<ReportScreen> {
                 Container(
                   padding: const EdgeInsets.all(12),
                   decoration: BoxDecoration(
-                    color: AppColors.error.withValues(alpha: 0.1),
+                    color: AppColors.error.withOpacity(0.1),
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: Row(
@@ -214,7 +214,7 @@ class _ReportScreenState extends ConsumerState<ReportScreen> {
                 'Ваша жалоба будет обработана конфиденциально',
                 style: TextStyle(
                   fontSize: 12,
-                  color: AppColors.textSecondary.withValues(alpha: 0.7),
+                  color: AppColors.textSecondary.withOpacity(0.7),
                   fontStyle: FontStyle.italic,
                 ),
                 textAlign: TextAlign.center,
