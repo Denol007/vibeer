@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "125640008911",
+    "project_id": "vibe-a0d7b",
+    "storage_bucket": "vibe-a0d7b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125640008911:android:8b5eef9ee2b2dec6f303ba",
+        "android_client_info": {
+          "package_name": "com.vibe.vibe_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125640008911-fqrn8cg76nljsucbts1pkkrj5sl6b2ul.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vibe.vibe_app",
+            "certificate_hash": "93755e0ece38cc7104c39095355312aba2a0d6b6"
+          }
+        },
+        {
+          "client_id": "125640008911-g7g7decdighoqd8b00185u0de19nlt4n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsYyW6Q9sU4OLasCbur4J6blgePA1tCQ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125640008911-g7g7decdighoqd8b00185u0de19nlt4n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "125640008911-ogghd12s6ssc64q152oomva2juuj5gja.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.vibe.vibeApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
